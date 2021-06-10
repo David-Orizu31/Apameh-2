@@ -249,6 +249,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </div>
 
 <style>
+  html body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .flex-container {
     display: flex;
   }
@@ -260,8 +265,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   }
 
   @media (max-width:480px) {
-    .flex-container > div {
-      width: 100px !important;
+    .flex-container {
+      display: block;
     }
   }
   </style>
