@@ -929,3 +929,5 @@ tbody tr:nth-child(even) {
 .my-p {
   font-size: 17px;
 }
+
+.table-responsive{overflow-x:auto;-webkit-overflow-scrolling:touch}
