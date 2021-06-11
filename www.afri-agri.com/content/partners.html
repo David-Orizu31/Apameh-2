@@ -11,20 +11,20 @@
 <link rel="shortcut icon" href="../sites/all/themes/responsive/favicon.ico" type="image/vnd.microsoft.icon" />
 <title>Partners | Apomah Global</title>
 <style type="text/css" media="all">
-@import url("https://www.afri-agri.com/modules/system/system.base.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/system/system.menus.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/system/system.messages.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/system/system.theme.css?qfgfc7");
+@import url("../sites/all/modules/system/system.base.css");
+@import url("../sites/all/modules/system/system.menus.css");
+@import url("../sites/all/modules/system/system.messages.css");
+@import url("../sites/all/modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
 @import url("../sites/all/modules/calendar/css/calendar_multiday7f79.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/comment/comment.css?qfgfc7");
+@import url("../sites/all/modules/comment/comment.css");
 @import url("../sites/all/modules/date/date_api/date7f79.css?qfgfc7");
 @import url("../sites/all/modules/date/date_popup/themes/datepicker.1.77f79.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/field/theme/field.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/node/node.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/search/search.css?qfgfc7");
-@import url("https://www.afri-agri.com/modules/user/user.css?qfgfc7");
+@import url("../sites/all/modules/field/theme/field.css");
+@import url("../sites/all/modules/node/node.css");
+@import url("../sites/all/modules/search/search.css");
+@import url("../sites/all/modules/user/user.css");
 @import url("../sites/all/modules/views/css/views7f79.css?qfgfc7");
 </style>
 <style type="text/css" media="all">
@@ -112,7 +112,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <div class="content node-page">
     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Check the websites of our suppliers and partners:</p>
 <p style="text-align: justify;">                                         </p>
-<p style="text-align: justify;">   <a href="http://www.enzazaden.com/" style="text-decoration: underline;" target="_blank"><img alt="Logo Enza Zaden" src="../sites/default/files/medium_EnzaZadenlogo_1.jpg" style="width: 120px; height: 120px;" /></a>    <a href="http://www.popvriendvegetableseeds.com/" target="_blank"><img alt="Logo Pop Vriend Seeds" src="../sites/default/files/PopVriendVegetableSeeds-logo_2.png" style="width: 320px; height: 160px;" /></a>     <a href="http://www.majstroseeds.com/" target="_blank"><img alt="Logo Majstro Seeds" src="../sites/default/files/Majstro%20logo.jpg" style="width: 150px; height: 32px;" /></a>       </p>
+<p style="text-align: justify;">   <a href="http://www.enzazaden.com/" style="text-decoration: underline;" target="_blank"><img alt="Logo Enza Zaden" src="../sites/default/files/medium_EnzaZadenlogo_1.jpg" style="width: 120px; height: 120px;" /></a>    <a href="http://www.popvriendvegetableseeds.com/" target="_blank"><img alt="Logo Pop Vriend Seeds" class="responsive-image" src="../sites/default/files/PopVriendVegetableSeeds-logo_2.png" /></a>     <a href="http://www.majstroseeds.com/" target="_blank"><img alt="Logo Majstro Seeds" src="../sites/default/files/Majstro%20logo.jpg" style="width: 150px; height: 32px;" /></a>       </p>
 <p style="text-align: justify;">    <a href="http://www.dutchplantin.com/" style="text-decoration: underline;" target="_blank"><img alt="Logo Dutch Plantin" src="../sites/default/files/Dutch%20Plantin_logo_1_0.jpg" style="width: 160px; height: 57px;" /></a>                  <a href="http://www.irri.com.tw/" style="text-decoration: underline;" target="_blank"><img alt="Logo San Fu" src="../sites/default/files/medium_San%20Fu%20stem%20logo.jpg" style="width: 120px; height: 120px;" /></a>                               <a href="http://www.vaniperen.com/" style="text-decoration: underline;" target="_blank"><img alt="Logo Van Iperen" src="../sites/default/files/Logo_Van_Iperen_0.jpg" style="width: 150px; height: 53px;" /></a>                    </p>
 <p style="text-align: justify;"> </p>
 <p style="text-align: justify;">   <a href="http://www.healthy-soil.com/" target="_blank"><img alt="Logo Healthy Soils" src="../sites/default/files/Logo%20Next%20Soil%20Services.png" style="width: 177px; height: 91px;" /></a>           <a href="https://primasta.nl/" target="_blank"><img alt="Logo Rimasta" src="../sites/default/files/Primasta%20Logo.jpg" style="width: 180px; height: 62px;" /></a>            <a href="https://moeysconsulting.com/" target="_blank"><img alt="Logo Moeys Consulting" src="../sites/default/files/Logo%20Moeys%20Consulting.jpg" style="width: 180px; height: 33px;" /></a>                              </p>
@@ -169,10 +169,24 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
     
 </div>
+
+<style>
+  .responsive-image {
+    width: 320px;
+    height: 160px;
+  }
+
+  @media (max-width:480px) {
+    .responsive-image {
+    width: 280px;
+    height: 140px;
+    }
+  }
+</style>
  
   
 <div id="copyright" class="container">
-<div class="credit">Copyright &copy; 2021, Apomah Global | <a href=../user.html>Login</a> | Developed by   <a href="http://www.ict-wereld.nl/" target="_blank">ICT Wereld Webdesign</a></div>
+<div class="credit">Copyright &copy; 2021, Apomah Global | <a href=../user.html>Login</a> | Developed by   Digital Roah Services</div>
    <div class="clear"></div>
 </div>  </body>
 
