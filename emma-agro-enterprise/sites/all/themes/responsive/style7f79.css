@@ -923,7 +923,8 @@ tbody tr:nth-child(even) {
 /* My Styles */
 
 .title-head {
-  font-size: 30px !important;
+  font-size: 25px !important;
+  color: rgb(80, 150, 50);
 }
 
 .my-p {
