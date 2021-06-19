@@ -1052,6 +1052,7 @@ tbody tr:nth-child(even) {
     .topnav .dropdown {display:none}
     .topnav a.icon {
       float: right;
+      padding-right: 30px;
       display: block;
     }
   }
