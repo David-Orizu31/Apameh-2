@@ -25,7 +25,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* #Base 960 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: 100%; margin: 0 auto; padding: 0; }
     .column, .columns                           { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
 
@@ -38,13 +38,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .container .two.columns                     { width: 100px; }
     .container .three.columns                   { width: 160px; }
     .container .four.columns                    { width: 220px; }
-    .container .five.columns                    { width: 280px; }
+    .container .five.columns                    { width: 400px; }
     .container .six.columns                     { width: 340px; }
     .container .seven.columns                   { width: 400px; }
     .container .eight.columns                   { width: 460px; }
     .container .nine.columns                    { width: 520px; }
     .container .ten.columns                     { width: 580px; }
-    .container .eleven.columns                  { width: 640px; }
+    .container .eleven.columns                  { width: 840px; }
     .container .twelve.columns                  { width: 700px; }
     .container .thirteen.columns                { width: 760px; }
     .container .fourteen.columns                { width: 820px; }
@@ -79,7 +79,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     /* Note: Design for a width of 768px */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .container                                  { width: 768px; }
+        .container                                  { width: 100%; }
         .container .column,
         .container .columns                         { margin-left: 10px; margin-right: 10px;  }
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
@@ -89,13 +89,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
         .container .two.columns                     { width: 76px; }
         .container .three.columns                   { width: 124px; }
         .container .four.columns                    { width: 172px; }
-        .container .five.columns                    { width: 220px; }
+        .container .five.columns                    { width: 500px; }
         .container .six.columns                     { width: 268px; }
         .container .seven.columns                   { width: 316px; }
         .container .eight.columns                   { width: 364px; }
         .container .nine.columns                    { width: 412px; }
         .container .ten.columns                     { width: 460px; }
-        .container .eleven.columns                  { width: 508px; }
+        .container .eleven.columns                  { width: 700px; }
         .container .twelve.columns                  { width: 556px; }
         .container .thirteen.columns                { width: 604px; }
         .container .fourteen.columns                { width: 652px; }
@@ -130,7 +130,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        .container { width: 300px; }
+        .container { width: 100%; }
         .columns, .column { margin: 0 10px; }
 
         .container .one.column,
@@ -150,7 +150,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 280px; }
+        .container .two-thirds.column  { width: 350px; }
 
         /* Offsets */
         .container .offset-by-one,
@@ -180,7 +180,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
+        .container { width: 100%; }
         .columns, .column { margin: 0 10px; }
 
         .container .one.column,
@@ -200,7 +200,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column { width: 400px; }
+        .container .two-thirds.column { width: 700px; }
         
     }
 

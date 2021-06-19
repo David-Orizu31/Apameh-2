@@ -38,6 +38,7 @@
 @import url("sites/all/themes/responsive/style7f79.css?qfgfc7");
 @import url("sites/default/files/color/responsive-efa1856c/colors7f79.css?qfgfc7");
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="sites/default/files/js/js_Ua98zxjH9I2U2rTee9IFt0Bz0daoaQQTSnaDxCxt3Kc.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js__57eJ6W0_owtRP7x8XcDsP6zpoEGWagSev3UfEnDw98.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js_PgItPnuYe-j4G-4ErY84OAe650k8GOh449UQo0mpxTA.js"></script>
@@ -52,18 +53,18 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     
 <div class="container">
 
-  <header id="head" role="banner">
+  <!-- <header id="head" role="banner">
     <hgroup class="five columns alpha">
        <div id="logo">
         <a href="index.html" title="Home"><img src="sites/default/files/afriagri_logo2.png" alt="Home"/></a>               </div>
     </hgroup>
     
     <div class="eleven columns omega" id="headright">
-                  <div id="socialbar">
-        <ul class="social">
+                  <div id="socialbar"> -->
+        <!-- <ul class="social">
             <li> <a href="#"> <img src="sites/all/themes/responsive/images/facebook.png"> </a> </li>                   <li> <a href="#"> <img src="sites/all/themes/responsive/images/rss.png"> </a> </li>
-        </ul>
-      </div>
+        </ul> -->
+      <!-- </div>
             
       <nav id="navigation" role="navigation">
       <div id="main-menu">
@@ -86,30 +87,76 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <li class="leaf"><a href="content/contact.html">Contact</a></li>
 <li class="last leaf"><a href="content/disclaimer.html">Disclaimer</a></li>
 </ul>       </div>
-      </nav><!-- end main-menu -->
-     </div>
+      </nav> -->
+      <!-- end main-menu -->
+     <!-- </div>
+  </header> -->
+  
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"><img src="sites/default/files/afriagri_logo2.png" alt="Home" width="200px"/></a>
+      <a href="index.html" class="nav-link active first-child">Home</a>
+      <a href="about-us.html" class="nav-link">About Us</a>
+      <div class="dropdown">
+        <button type="button" class="dropbtn">
+         <a href="crop.html"><span class="float"> Products
+          <i class="fa fa-caret-down"></i></span></a>
+         </button>
+        <ul class="dropdown-content">
+          <li><a href="crop.html" title="">Seeds</a></li>
+          <li><a href="content/fertilizers.html">Fertilizers</a></li>
+          <li><a href="content/irrigation-1.html">Irrigation</a></li>
+          <li><a href="content/mulching.html">Mulching</a></li>
+          <li><a href="content/coco-peat.html">Coco Peat</a></li>
+          <li><a href="content/potting-soil.html">Potting Soil</a></li>
+          <li><a href="content/trays-clips.html">Trays &amp; Clips</a></li>
+          <li><a href="content/soil-analysis-soil-sampling.html">Soil Analysis &amp; Soil Sampling</a></li>
+        </ul>
+      </div> 
+
+      <a href="content/partners.html"  class="nav-link">Partners</a>
+      <div class="dropdown">
+        <button type="button" class="dropbtn">
+         <a href="content/support.html"><span class="float"> Support
+          <i class="fa fa-caret-down"></i></span></a>
+         </button>
+        <ul class="dropdown-content">
+          <li><a href="content/planting-guide.html">Planting Guide</a></li>
+          <li><a href="content/equipment-0.html">Equipment</a></li>
+        </ul>
+      </div> 
+      <a href="job-list.html"  class="nav-link" title="">Careers</a>
+      <a href="content/contact.html"  class="nav-link">Contact</a>
+      <a href="content/disclaimer.html"  class="nav-link">Disclaimer</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size: 30px;"></i>
+      </a>
+    </div>
   </header>
 </div>
+
+  
   
 <div class="container" id="content-contain">
 
       <div class="container">
+        <br><br><br><br><br>
           <!-- Slides -->
            <div class="flexslider">
       <ul class="slides">
         <li>
           <a href="index.html">
-            <img src="sites/all/themes/responsive/images/banner-1.jpg"/>
+            <img src="sites/all/themes/responsive/images/banner-1.jpg" style="width: 100%;"/>
           </a>
                   </li>
         <li>
           <a href="index.html">
-            <img src="sites/all/themes/responsive/images/agro-copy.jpg"/>
+            <img src="sites/all/themes/responsive/images/agro-copy.jpg" style="width: 100%;"/>
           </a>
                   </li>
         <li>
           <a href="index.html">
-            <img src="sites/all/themes/responsive/images/agro-banner-3.jpg"/>
+            <img src="sites/all/themes/responsive/images/agro-banner-3.jpg" style="width: 100%;"/>
           </a>
                   </li>
       </ul>
@@ -133,8 +180,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       
     
   <div class="content node-page">
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><span style="font-size: 13px;">We are a Nigeria based supplier for the agricultural and horticultural industry.</span></p>
-<p>Our main office is based in Lagos.</p>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><span>We are a Nigeria based supplier for the agricultural and horticultural industry.</span></p>
+<p>Our warehouses are located in Enugu, Lagos, Kano, and Plateau State.</p>
 <p>Our customers are farmers and agriculture businesses in all regions of Nigeria.</p>
 
 <br>
@@ -145,12 +192,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     <div class="col" align="center"  data-aos="fade-right" data-aos-duration="1500">
       <img src="sites/all/themes/responsive/images/input-financing.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Input Financing</b></p>
-      <p style="font-size: 14px;">Bridging the financinal gap for smallholder <br> farmers through acess to quality farm  <br>inputs/seedlings and technical support</p>
+      <p>Bridging the financinal gap for smallholder farmers through acess to quality farm  inputs/seedlings and technical support</p>
     </div>
     <div class="col" align="center"  data-aos="fade-left" data-aos-duration="1500">
       <img src="sites/all/themes/responsive/images/agro-tech.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Agricultural Technology & Consultancy</b></p>
-      <p style="font-size: 14px;">Boosting overall farming efficiency by <br> leveraging on the power of technology via our satellite <br> imagery, remote sensing systems & IVRs.</p>
+      <p>Boosting overall farming efficiency by  leveraging on the power of technology via our satellite imagery, remote sensing systems & IVRs.</p>
     </div>
   </div>
 
@@ -158,12 +205,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     <div class="col" align="center"  data-aos="zoom-in-up" data-aos-duration="1800">
       <img src="sites/all/themes/responsive/images/agro-security.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Insurance</b></p>
-      <p style="font-size: 14px;">Providing adequate farming security <br> from planting to post harvest to <br> ensure maximum productivity.</p>
+      <p>Providing adequate farming security  from planting to post harvest to ensure maximum productivity.</p>
     </div>
     <div class="col" align="center"  data-aos="zoom-in-down" data-aos-duration="1800">
       <img src="sites/all/themes/responsive/images/agro-aggregation.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Aggregation</b></p>
-      <p style="font-size: 14px;">Ensuring accessibility of conducive <br> storage systems for smallholder <br> farmers after harvest.</p>
+      <p>Ensuring accessibility of conducive storage systems for smallholder farmers after harvest.</p>
     </div>
   </div>
 
@@ -171,12 +218,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     <div class="col" align="center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
       <img src="sites/all/themes/responsive/images/agro-commodity.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Commodity Trading</b></p>
-      <p style="font-size: 14px;">Exportation of in-demand agro <br> commodities with high level of <br> nutritional and quality standards.</p>
+      <p>Exportation of in-demand agro commodities with high level of nutritional and quality standards.</p>
     </div>
     <div class="col" align="center" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
       <img src="sites/all/themes/responsive/images/agro-process.png" alt="input financing" class="img-responsive" width="70px">
       <p class="my-p"><b>Food Processing</b></p>
-      <p style="font-size: 14px;">Producing of quality semi-finished <br> Agro product for direct consumption.</p>
+      <p>Producing of quality semi-finished Agro product for direct consumption.</p>
     </div>
   </div>
 </div>
@@ -184,18 +231,18 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <br>
 
 <p>We are the sole importer and distributor of:</p>
-<ul><li>100% water soluble fertilizers (The Netherlands)</li>
+<ul class="list"><li>100% water soluble fertilizers (The Netherlands)</li>
 <li>Vegetable seeds from 'Enza Zaden', 'Majstro' and 'Pop Vriend Seeds' (The Netherlands)</li>
 <li>Drip and spray tube irrigation equipment from San-Fu (Taiwan)</li>
 <li>Seedling trays and mulch foil from SanFu (Taiwan)</li>
 <li>Coco peat from Dutch Plantin (The Netherlands)</li>
 </ul><p> </p>
 <p>Next to this we assist in:</p>
-<ul><li>Soil- and irrigation water analysis</li>
+<ul class="list"><li>Soil- and irrigation water analysis</li>
 <li>New and fairly used equipment and machinery (tractors, boom sprayers, planters, etc.)</li>
 </ul><p> </p>
 <p>Our aim: </p>
-<ul><li>Become your preferred agribusiness partner and supplier</li>
+<ul class="list"><li>Become your preferred agribusiness partner and supplier</li>
 <li>By caring for your business</li>
 <li>Giving technical support to obtain better results</li>
 </ul></div></div></div>  </div>
@@ -223,7 +270,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
   
       <div class="view-content">
-      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+      <div class="item-list">    <ul class="list">          <li class="views-row views-row-1 views-row-odd views-row-first">  
   <div class="views-field views-field-title">        <span class="field-content"><a href="newsview/177.html">Premium Potting Soil Now available in 40L bags</a></span>  </div></li>
           <li class="views-row views-row-2 views-row-even">  
   <div class="views-field views-field-title">        <span class="field-content"><a href="newsview/174.html">Corona update</a></span>  </div></li>
@@ -254,6 +301,15 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     overflow-x: hidden;
   }
 
+  p {
+    font-size: 17px;
+  }
+
+  .list li {
+    list-style-type: square;
+    font-size: 15px;
+  }
+
   .flex-container {
     display: flex;
   }
@@ -270,6 +326,10 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     }
   }
   </style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
   
 <div id="copyright" class="container">
 <div class="credit">Copyright &copy; 2021, Apameh Global | <a href=user.html>Login</a> | Developed by   Digital Roah Services</div>
@@ -282,6 +342,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   AOS.init();
 </script>
 
+<script src="sites/all/js/main.js"></script>
  </body>
 
 <!-- Mirrored from www.afri-agri.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jun 2021 05:51:17 GMT -->

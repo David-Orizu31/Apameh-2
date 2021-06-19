@@ -36,6 +36,7 @@
 @import url("sites/all/themes/responsive/style7f79.css?qfgfc7");
 @import url("sites/default/files/color/responsive-efa1856c/colors7f79.css?qfgfc7");
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="sites/default/files/js/js_Ua98zxjH9I2U2rTee9IFt0Bz0daoaQQTSnaDxCxt3Kc.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js_xmM2DX0x7dYYwCdF-4UCXnb1kdJuyeRA2nFjd5jSPNE.js"></script>
 <script type="text/javascript">
@@ -59,50 +60,55 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     
 <div class="container">
 
-  <header id="head" role="banner">
-    <hgroup class="five columns alpha">
-       <div id="logo">
-        <a href="index.html" title="Home"><img src="sites/default/files/afriagri_logo2.png" alt="Home"/></a>               </div>
-    </hgroup>
-    
-    <div class="eleven columns omega" id="headright">
-                  <div id="socialbar">
-        <ul class="social">
-            <li> <a href="#"> <img src="sites/all/themes/responsive/images/facebook.png"> </a> </li>                   <li> <a href="#"> <img src="sites/all/themes/responsive/images/rss.png"> </a> </li>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"><img src="sites/default/files/afriagri_logo2.png" alt="Home" width="200px"/></a>
+      <a href="index.html" class="nav-link first-child">Home</a>
+      <a href="about-us.html" class="nav-link">About Us</a>
+      <div class="dropdown">
+        <button type="button" class="dropbtn">
+         <a href="crop.html"><span class="float"> Products
+          <i class="fa fa-caret-down"></i></span></a>
+         </button>
+        <ul class="dropdown-content">
+          <li><a href="crop.html" title="">Seeds</a></li>
+          <li><a href="content/fertilizers.html">Fertilizers</a></li>
+          <li><a href="content/irrigation-1.html">Irrigation</a></li>
+          <li><a href="content/mulching.html">Mulching</a></li>
+          <li><a href="content/coco-peat.html">Coco Peat</a></li>
+          <li><a href="content/potting-soil.html">Potting Soil</a></li>
+          <li><a href="content/trays-clips.html">Trays &amp; Clips</a></li>
+          <li><a href="content/soil-analysis-soil-sampling.html">Soil Analysis &amp; Soil Sampling</a></li>
         </ul>
-      </div>
-            
-      <nav id="navigation" role="navigation">
-      <div id="main-menu">
-        <ul class="menu"><li class="first leaf"><a href="index.html">Home</a></li>
-<li class="leaf"><a href="about-us.html">About us</a></li>
-<li class="expanded"><a href="crop.html" title="">Products</a><ul class="menu"><li class="first leaf"><a href="crop.html" title="">Seeds</a></li>
-<li class="leaf"><a href="content/fertilizers.html">Fertilizers</a></li>
-<li class="leaf"><a href="content/irrigation-1.html">Irrigation</a></li>
-<li class="leaf"><a href="content/mulching.html">Mulching</a></li>
-<li class="leaf"><a href="content/coco-peat.html">Coco Peat</a></li>
-<li class="leaf"><a href="content/potting-soil.html">Potting Soil</a></li>
-<li class="leaf"><a href="content/trays-clips.html">Trays &amp; Clips</a></li>
-<li class="last leaf"><a href="content/soil-analysis-soil-sampling.html">Soil Analysis &amp; Soil Sampling</a></li>
-</ul></li>
-<li class="leaf"><a href="content/partners.html">Partners</a></li>
-<li class="expanded"><a href="content/support.html">Support</a><ul class="menu"><li class="first leaf"><a href="content/planting-guide.html">Planting Guide</a></li>
-<li class="last leaf"><a href="content/equipment-0.html">Equipment</a></li>
-</ul></li>
-<li class="leaf"><a href="job-list.html" title="">Careers</a></li>
-<li class="leaf"><a href="content/contact.html">Contact</a></li>
-<li class="last leaf"><a href="content/disclaimer.html">Disclaimer</a></li>
-</ul>       </div>
-      </nav><!-- end main-menu -->
-     </div>
+      </div> 
+
+      <a href="content/partners.html"  class="nav-link">Partners</a>
+      <div class="dropdown">
+        <button type="button" class="dropbtn">
+         <a href="content/support.html"><span class="float"> Support
+          <i class="fa fa-caret-down"></i></span></a>
+         </button>
+        <ul class="dropdown-content">
+          <li><a href="content/planting-guide.html">Planting Guide</a></li>
+          <li><a href="content/equipment-0.html">Equipment</a></li>
+        </ul>
+      </div> 
+      <a href="job-list.html"  class="nav-link active" title="">Careers</a>
+      <a href="content/contact.html"  class="nav-link">Contact</a>
+      <a href="content/disclaimer.html"  class="nav-link">Disclaimer</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size: 30px;"></i>
+      </a>
+    </div>
   </header>
+
 </div>
   
 <div class="container" id="content-contain">
 
     
     
-  
+  <br><br><br><br><br><br>
     
   
  <div id="content" class="sixteen columns">
@@ -161,12 +167,17 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
    }
    }
 </style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
  
   
 <div id="copyright" class="container">
 <div class="credit">Copyright &copy; 2021, Apameh Global | <a href=user.html>Login</a> | Developed by   Digital Roah Services</div>
    <div class="clear"></div>
-</div>  <script type="text/javascript" defer="defer" src="../www.google.com/recaptcha/api4450.js?onload=google_recaptcha_onload&amp;render=explicit&amp;hl=en"></script>
+</div>
+  <script type="text/javascript" defer="defer" src="../www.google.com/recaptcha/api4450.js?onload=google_recaptcha_onload&amp;render=explicit&amp;hl=en"></script>
+
+<script src="sites/all/js/main.js"></script>
 </body>
 
 <!-- Mirrored from www.afri-agri.com/user by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jun 2021 05:52:54 GMT -->
