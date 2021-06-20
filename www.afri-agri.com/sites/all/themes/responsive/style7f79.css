@@ -164,6 +164,13 @@ td {
 }
 
 
+html body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+
+
 body {
   background: #dedcd9;
   font-family: Open Sans,Arial,Century gothic, sans-serif;
