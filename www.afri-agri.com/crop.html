@@ -36,6 +36,7 @@
 @import url("sites/all/themes/responsive/style7f79.css?qfgfc7");
 @import url("sites/default/files/color/responsive-efa1856c/colors7f79.css?qfgfc7");
 </style>
+<link rel="stylesheet" href="products/product-styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="sites/default/files/js/js_Ua98zxjH9I2U2rTee9IFt0Bz0daoaQQTSnaDxCxt3Kc.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js_xmM2DX0x7dYYwCdF-4UCXnb1kdJuyeRA2nFjd5jSPNE.js"></script>
@@ -53,7 +54,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
   <header>
     <div class="topnav" id="myTopnav">
-      <a href="index.html"><img src="sites/default/files/afriagri_logo2.png" alt="Home" width="200px"/></a>
+      <a href="index.html"><img src="sites/default/files/apameh.png" alt="Home" width="140px" height="70px"/></a>
       <a href="index.html" class="nav-link first-child">Home</a>
       <a href="about-us.html" class="nav-link">About Us</a>
       <div class="dropdown">
@@ -73,7 +74,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
         </ul>
       </div> 
 
-      <a href="content/partners.html"  class="nav-link">Partners</a>
+      
       <div class="dropdown">
         <button type="button" class="dropbtn">
          <a href="#"><span class="float"> Support
@@ -88,6 +89,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       <a href="job-list.html"  class="nav-link" title="">Careers</a>
       <a href="content/contact.html"  class="nav-link">Contact</a>
       <a href="content/disclaimer.html"  class="nav-link">Disclaimer</a>
+      <a href="user.html" type="button" class="btn-login">Login</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars" style="font-size: 30px;"></i>
       </a>
@@ -99,15 +101,451 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <div class="container" id="content-contain">
 
   <br><br><br><br><br>
- <div id="content" class="sixteen columns">
-  <div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="index.html">Home</a> » Crop</nav></div>
+ <div id="content" class="page-area">
+  <div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="index.html">Home</a> » Seeds</nav></div>
    <section id="post-content" role="main">
-                <h1 class="page-title">Crop</h1>                    <div class="region region-content">
+                <h1 class="page-title">Seeds</h1>                    <div class="region region-content">
   <div id="block-system-main" class="block block-system">
 
       
   <div class="content">
-    <div class="view view-race view-id-race view-display-id-page view-dom-id-b277c3ae5c5ba15f7fde9e7ffbf6a990">
+
+    <div class="flex-container">
+      <div class="col" align="center">
+        <a href="javascript:void(0);">
+        <img src="products/seeds/green-beans.jpg" alt="green-beans" class="img img-responsive">
+        <p>Green Beans</p>
+        <div class="overlay">
+          <div class="text"><button type="button" class="btn-request" id="greenbeansmodal">Request</button></div>
+        </div>
+      </a>
+      </div>
+      <div class="col" align="center">
+        <a href="javascript:void(0);">
+          <img src="products/seeds/moringa-seeds.jpg" alt="moringa seeds" class="img img-responsive">
+          <p>Moringa Seeds</p>
+          <div class="overlay">
+            <div class="text"><button type="button" class="btn-request" id="moringaseedsmodal">Request</button></div>
+          </div>
+        </a>
+      </div>
+      <div class="col" align="center">
+        <a href="javascript:void(0);">
+          <img src="products/seeds/peas.jpg" alt="green peas" class="img img-responsive">
+          <p>Peas</p>
+          <div class="overlay">
+            <div class="text"><button type="button" class="btn-request" id="greenpeasmodal">Request</button></div>
+          </div>
+        </a>
+      </div>
+      <div class="col" align="center">
+        <a href="javascript:void(0);">
+          <img src="products/seeds/pumpkin.jpg" alt="pumpkin" class="img img-responsive">
+          <p>Pumpkin</p>
+          <div class="overlay">
+            <div class="text"><button type="button" class="btn-request" id="pumpkinmodal">Request</button></div>
+          </div>
+        </a>
+      </div>
+      <div class="col" align="center">
+        <a href="javascript:void(0);">
+          <img src="products/seeds/sunflower-seeds.jpg" alt="sunflower seeds" class="img img-responsive">
+          <p>Sunflower Seeds</p>
+          <div class="overlay">
+            <div class="text"><button type="button" class="btn-request" id="sunseedsmodal">Request</button></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Green Beans Modal -->
+<div id="greenmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Product Request</h2>
+    </div>
+    <div class="modal-body" align="center">
+      <form action="/productsent" method="get" class="form">
+        <div class="form-group">
+          <label for="product_name" class="form-label">Product Name</label>
+          <input type="text" name="product_name" id="product_name" value="Green Beans" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+          <label for="client_name" class="form-label">Client's Name</label>
+          <input type="text" name="client_name" id="client_name" placeholder="Enter Client's Name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Enter Subject" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Valid Email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" id="message" class="form-control" placeholder="Enter Message" style="height: 70px !important;" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Send</button>
+        </div>
+        <br>
+      </form>
+    </div>
+    <!-- <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div> -->
+  </div>
+
+</div>
+
+<script>
+  // Get the modal
+var greenmodal = document.getElementById("greenmodal");
+
+// Get the button that opens the modal
+var greenbtn = document.getElementById("greenbeansmodal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+greenbtn.onclick = function() {
+  greenmodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  greenmodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == greenmodal) {
+    greenmodal.style.display = "none";
+  }
+}
+</script>
+
+    <!-- Moringa Modal -->
+    <div id="moringamodal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close moringaclose">&times;</span>
+          <h2>Product Request</h2>
+        </div>
+        <div class="modal-body" align="center">
+          <form action="/productsent" method="get" class="form">
+            <div class="form-group">
+              <label for="product_name" class="form-label">Product Name</label>
+              <input type="text" name="product_name" id="product_name" value="Moringa Seeds" class="form-control" disabled>
+            </div>
+    
+            <div class="form-group">
+              <label for="client_name" class="form-label">Client's Name</label>
+              <input type="text" name="client_name" id="client_name" placeholder="Enter Client's Name" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Enter Subject" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter Valid Email" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" class="form-control" placeholder="Enter Message" style="height: 70px !important;" required></textarea>
+            </div>
+    
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Send</button>
+            </div>
+            <br>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    
+    </div>
+
+    <script>
+      // Get the modal
+    var moringamodal = document.getElementById("moringamodal");
+    
+    // Get the button that opens the modal
+    var moringabtn = document.getElementById("moringaseedsmodal");
+    
+    // Get the <span> element that closes the modal
+    var moringaspan = document.getElementsByClassName("moringaclose")[0];
+    
+    // When the user clicks the button, open the modal 
+    moringabtn.onclick = function() {
+      moringamodal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    moringaspan.onclick = function() {
+      moringamodal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == moringamodal) {
+        moringamodal.style.display = "none";
+      }
+    }
+    </script>
+
+    <!-- Green Peas Modal -->
+    <div id="peasmodal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close peasclose">&times;</span>
+          <h2>Product Request</h2>
+        </div>
+        <div class="modal-body" align="center">
+          <form action="/productsent" method="get" class="form">
+            <div class="form-group">
+              <label for="product_name" class="form-label">Product Name</label>
+              <input type="text" name="product_name" id="product_name" value="Peas Seeds" class="form-control" disabled>
+            </div>
+    
+            <div class="form-group">
+              <label for="client_name" class="form-label">Client's Name</label>
+              <input type="text" name="client_name" id="client_name" placeholder="Enter Client's Name" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Enter Subject" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter Valid Email" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" class="form-control" placeholder="Enter Message" style="height: 70px !important;" required></textarea>
+            </div>
+    
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Send</button>
+            </div>
+            <br>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    
+    </div>
+
+    <script>
+      // Get the modal
+    var peasmodal = document.getElementById("peasmodal");
+    
+    // Get the button that opens the modal
+    var peasbtn = document.getElementById("greenpeasmodal");
+    
+    // Get the <span> element that closes the modal
+    var peasspan = document.getElementsByClassName("peasclose")[0];
+    
+    // When the user clicks the button, open the modal 
+    peasbtn.onclick = function() {
+      peasmodal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    peasspan.onclick = function() {
+      peasmodal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == peasmodal) {
+        peasmodal.style.display = "none";
+      }
+    }
+    </script>
+
+     <!-- Pumpkin Modal -->
+     <div id="pumpmodal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close pumpclose">&times;</span>
+          <h2>Product Request</h2>
+        </div>
+        <div class="modal-body" align="center">
+          <form action="/productsent" method="get" class="form">
+            <div class="form-group">
+              <label for="product_name" class="form-label">Product Name</label>
+              <input type="text" name="product_name" id="product_name" value="Pumpkin" class="form-control" disabled>
+            </div>
+    
+            <div class="form-group">
+              <label for="client_name" class="form-label">Client's Name</label>
+              <input type="text" name="client_name" id="client_name" placeholder="Enter Client's Name" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Enter Subject" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter Valid Email" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" class="form-control" placeholder="Enter Message" style="height: 70px !important;" required></textarea>
+            </div>
+    
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Send</button>
+            </div>
+            <br>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    
+    </div>
+
+    <script>
+      // Get the modal
+    var pumpmodal = document.getElementById("pumpmodal");
+    
+    // Get the button that opens the modal
+    var pumpbtn = document.getElementById("pumpkinmodal");
+    
+    // Get the <span> element that closes the modal
+    var pumpspan = document.getElementsByClassName("pumpclose")[0];
+    
+    // When the user clicks the button, open the modal 
+    pumpbtn.onclick = function() {
+      pumpmodal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    pumpspan.onclick = function() {
+      pumpmodal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == pumpmodal) {
+        pumpmodal.style.display = "none";
+      }
+    }
+    </script>
+
+
+<!-- Sunflower Seeds Modal -->
+<div id="sunmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close sunclose">&times;</span>
+      <h2>Product Request</h2>
+    </div>
+    <div class="modal-body" align="center">
+      <form action="/productsent" method="get" class="form">
+        <div class="form-group">
+          <label for="product_name" class="form-label">Product Name</label>
+          <input type="text" name="product_name" id="product_name" value="Sunflower Seeds" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+          <label for="client_name" class="form-label">Client's Name</label>
+          <input type="text" name="client_name" id="client_name" placeholder="Enter Client's Name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Enter Subject" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Valid Email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" id="message" class="form-control" placeholder="Enter Message" style="height: 70px !important;" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Send</button>
+        </div>
+        <br>
+      </form>
+    </div>
+    <!-- <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div> -->
+  </div>
+
+</div>
+
+<script>
+  // Get the modal
+var sunmodal = document.getElementById("sunmodal");
+
+// Get the button that opens the modal
+var sunbtn = document.getElementById("sunseedsmodal");
+
+// Get the <span> element that closes the modal
+var sunspan = document.getElementsByClassName("sunclose")[0];
+
+// When the user clicks the button, open the modal 
+sunbtn.onclick = function() {
+  sunmodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+sunspan.onclick = function() {
+  sunmodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sunmodal) {
+    sunmodal.style.display = "none";
+  }
+}
+</script>
+
+
+    <!-- <div class="view view-race view-id-race view-display-id-page view-dom-id-b277c3ae5c5ba15f7fde9e7ffbf6a990">
         
   
   
@@ -201,7 +639,9 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
   
   
-</div>  </div>
+</div>  -->
+
+ </div>
   
 </div> <!-- /.block -->
 </div>
@@ -215,23 +655,6 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     
 </div>
 
-<style>
-    .flex-container {
-    display: flex;
-  }
-  
-  .flex-container > div {
-    background-color: #e0dddd;
-    margin: 10px;
-    padding: 20px;
-  }
-
-  @media (max-width:780px) {
-    .flex-container {
-      display: block;
-    }
-  }
-</style>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 
