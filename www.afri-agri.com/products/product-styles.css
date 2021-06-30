@@ -185,3 +185,9 @@
     margin: 0px;
   }
   }
+
+  @media (max-width:480px) {
+    .flex-container {
+      margin-right: 40px;
+    }
+  }

@@ -67,15 +67,22 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
          <a href="#"><span class="float"> Products
           <i class="fa fa-caret-down"></i></span></a>
          </button>
-        <ul class="dropdown-content">
+         <ul class="dropdown-content">
           <li><a href="../crop.html" title="">Seeds</a></li>
           <li><a href="../content/fertilizers.html">Fertilizers</a></li>
-          <li><a href="../content/irrigation-1.html">Irrigation</a></li>
-          <li><a href="../content/mulching.html">Mulching</a></li>
-          <li><a href="../content/coco-peat.html">Coco Peat</a></li>
-          <li><a href="../content/potting-soil.html">Potting Soil</a></li>
-          <li><a href="../content/trays-clips.html">Trays &amp; Clips</a></li>
-          <li><a href="../content/soil-analysis-soil-sampling.html">Soil Analysis &amp; Soil Sampling</a></li>
+          <li><a href="../products/product-category/vegetable.html">Vegetables</a></li>
+          <li><a href="../products/product-category/fruits.html">Fruits</a></li>
+          <li><a href="../products/product-category/livestock.html">Livestock</a></li>
+          <li><a href="../products/product-category/nuts.html">Nuts</a></li>
+          <li><a href="../products/product-category/cereals.html">Cereals</a></li>
+          <li><a href="../products/product-category/tubers.html">Tubers</a></li>
+          <li><a href="../products/product-category/spices.html">Spices</a></li>
+          <!-- <li><a href="content/irrigation-1.html">Irrigation</a></li>
+          <li><a href="content/mulching.html">Mulching</a></li>
+          <li><a href="content/coco-peat.html">Coco Peat</a></li>
+          <li><a href="content/potting-soil.html">Potting Soil</a></li>
+          <li><a href="content/trays-clips.html">Trays &amp; Clips</a></li>
+          <li><a href="content/soil-analysis-soil-sampling.html">Soil Analysis &amp; Soil Sampling</a></li> -->
         </ul>
       </div> 
 
@@ -106,11 +113,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <div class="container" id="content-contain">
 
     
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
   
     
   
- <div id="content" class="eleven columns">
+ <div id="content" class="page-area">
   <div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="../index.html">Home</a> » <a href="../crop.html" title="">Products</a> » Fertilizers</nav></div>
    <section id="post-content" role="main">
                 <h1 class="page-title">Fertilizers</h1>                    <div class="region region-content">
@@ -126,17 +133,21 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       <p><a href="../sites/default/files/Fertilizers.jpg" data-fancybox data-caption="Apameh Fertilizers">
       <img alt="" class="responsive-image" src="../sites/default/files/Fertilizers.jpg" /></a>
       Proper fertilizer application gives:</p>
-<p style="margin-left: 40px;">·     Increased yields</p>
-<p style="margin-left: 40px;">·     Improves produce quality</p>
-<p style="margin-left: 40px;">·     Improves produce shelf-life</p>
-<p style="margin-left: 40px;">·     Adds nutrients to the plants that the soil does not supply</p>
-<p style="margin-left: 40px;">·     And consequently results in higher income</p>
+      <ul class="list">
+       <li>Increased yields</li>
+       <li>Improves produce quality</li>
+       <li>Improves produce shelf-life</li>
+       <li>Adds nutrients to the plants that the soil does not supply</li>
+       <li>And consequently results in higher income</li>
+</ul> <br>
 <p>Method of irrigation affects fertilizer efficiency:</p>
-<p style="margin-left: 40px;">·     Fertilizer use with drip irrigation is twice as efficient compared to use with furrow irrigation</p>
+   <ul class="list">
+     <li>Fertilizer use with drip irrigation is twice as efficient compared to use with furrow irrigation</li>
+</ul> <br>
 <p>For this reason we import 100% water-soluble horticultural grade fertilizers from The Netherlands.</p>
 <p>Actually we have the following fertilizers in stock.</p>
 <div class="table-responsive">
-<table class="table" border="1" cellpadding="1" cellspacing="1" style="width: 800px;"><thead><tr><th scope="col" style="text-align: left;">Fertilizer</th>
+<table class="table" border="1" cellpadding="1" cellspacing="1" style="width: 100%;"><thead><tr><th scope="col" style="text-align: left;">Fertilizer</th>
 <th scope="col" style="text-align: left;">Chemical composiition</th>
 <th scope="col" style="text-align: left;">Packing</th>
 <th scope="col" style="text-align: left;">Weight</th>
@@ -214,7 +225,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   </section> <!-- /#main -->
  </div>
 
-      <aside id="sidebar-first" role="complementary" class="sidebar five columns">
+      <!-- <aside id="sidebar-first" role="complementary" class="sidebar five columns">
       <div class="region region-sidebar-first">
   <div id="block-views-news-block" class="block block-views">
 
@@ -241,10 +252,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
 </div>  </div>
   
-</div> <!-- /.block -->
 </div>
- <!-- /.region -->
-    </aside>  <!-- /#sidebar-first -->
+</div>
+    </aside> -->
+
+      <!-- /#sidebar-first -->
   
   <div class="clear"></div>
   
@@ -253,15 +265,13 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <style>
   .responsive-image{
-    width: 400px; 
-    height: 300px; 
+    width: 40%;
     float: right;
   }
 
   @media (max-width:480px) {
     .responsive-image {
-      width: 250px;
-      height: 200px;
+      width: 100%;
     }
   }
 </style>
@@ -270,6 +280,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
  
   
 <div id="copyright" class="container">
+  <div align="center">
+    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+    <a href="#" class="social-links"><i class="fa fa-twitter-square"></i></a>
+  </div>
+  <br>
 <div class="credit">Copyright &copy; 2021, Apameh Global | <a href=../user.html>Login</a> | Developed by   Digital Roah Services</div>
    <div class="clear"></div>
 </div> 
